@@ -71,6 +71,13 @@
 
 - [MAGI-oss_python](https://github.com/limonene/MAGI-oss_python): Control Plane および推論Runnerの実装。
 
+## License
+
+This dataset is released under the **Creative Commons Attribution 4.0 International (CC-BY 4.0)** license.
+
+You may reuse the data for research, benchmarking, and derivative works,
+as long as proper attribution is provided.
+
 ---
 
 ## 引用
@@ -78,3 +85,8 @@
 本データセットを利用する場合は、以下の論文を引用してください。
 
 > 伊藤あきら, "日本語LLM評価のための再現可能な検証基盤設計," 2026年電子情報通信学会総合大会, 2026.
+
+---
+
+This repository contains experimental artifacts only.
+The MAGI control plane implementation is provided separately.
