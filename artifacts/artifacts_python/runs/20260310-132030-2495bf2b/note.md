@@ -1,7 +1,7 @@
 # RunPod Sweep (MI300X) 実行結果・障害調査メモ
 
 ## 事象
-Python版の Sweep 実験 (`/home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/3-run_plan.py`) を RunPod の MI300X ノード (`root@213.173.96.55`) で実行したところ、以下の事象が発生した。
+Python版の Sweep 実験 (`<INSTALL_DIR>/batch_script/STAGE01/3-run_plan.py`) を RunPod の MI300X ノード (`root@YOUR_RUNPOD_IP`) で実行したところ、以下の事象が発生した。
 - GPUの稼働率 (`rocm-smi`) は 0% となりアイドル状態に見える。
 - しかし、バッチスクリプト側は処理が終わらず、`responses.jsonl` がローカルに同期されないままプロセスがスタックしている（ように見えた）。
 
@@ -10,7 +10,7 @@ Python版の Sweep 実験 (`/home/limonene/ROCm-project/ROCm-MCP/batch_script/ST
 ### 1. リモート上の動作ディレクトリとログの確認
 リモート上では `fallback_tmp` モードで動作しており、 `/tmp/magi_runs/20260310-132030-2495bf2b/` に結果ファイルが生成されていた。
 ```bash
-> ssh -o StrictHostKeyChecking=no root@213.173.96.55 -p 13771 -i /home/limonene/.ssh/id_rsa-ansible "ls -lat /tmp/magi_runs/*/ | head -n 20"
+> ssh -o StrictHostKeyChecking=no root@YOUR_RUNPOD_IP -p 13771 -i ~/.ssh/YOUR_KEY "ls -lat /tmp/magi_runs/*/ | head -n 20"
 ```
 結果として、リモート上には以下のファイルがすでに生成されていることが確認できた。
 - `compute.exit.json` (6,957 bytes)
@@ -20,7 +20,7 @@ Python版の Sweep 実験 (`/home/limonene/ROCm-project/ROCm-MCP/batch_script/ST
 ### 2. 失敗原因の特定 (`compute.exit.json`)
 結果ファイルの生成自体は完了していたため、なぜ失敗 (`exit 1`) になり、結果として SCP （ローカルへの同期）が行われなかったのか確認した。
 ```bash
-> ssh -o StrictHostKeyChecking=no root@213.173.96.55 -p 13771 -i /home/limonene/.ssh/id_rsa-ansible "cat /tmp/magi_runs/*/compute.exit.json"
+> ssh -o StrictHostKeyChecking=no root@YOUR_RUNPOD_IP -p 13771 -i ~/.ssh/YOUR_KEY "cat /tmp/magi_runs/*/compute.exit.json"
 ```
 これを見ると、`timeout_sec_per_task=120`（120秒）の制限に引っ掛かるタスクが多発していることが判明した。
 以下のように、全200タスク中、49タスクが120秒を経過（`elapsed_ms=120011`）して強制終了されていた。
@@ -35,10 +35,10 @@ Python版の Sweep 実験 (`/home/limonene/ROCm-project/ROCm-MCP/batch_script/ST
 ### 3. スクリプトの挙動とエラーの詳細 (`compute.stderr.log`)
 ローカルへ rsync が入っておらず `scp` にて回収し、標準エラーの内容を確認した。
 ```bash
-> scp -P 13771 -i /home/limonene/.ssh/id_rsa-ansible root@213.173.96.55:/tmp/magi_runs/20260310-132030-2495bf2b/compute.* /home/limonene/ROCm-project/tank/artifacts_py/runs/20260310-132030-2495bf2b/
-> scp -P 13771 -i /home/limonene/.ssh/id_rsa-ansible root@213.173.96.55:/tmp/magi_runs/20260310-132030-2495bf2b/responses.jsonl /home/limonene/ROCm-project/tank/artifacts_py/runs/20260310-132030-2495bf2b/
+> scp -P 13771 -i ~/.ssh/YOUR_KEY root@YOUR_RUNPOD_IP:/tmp/magi_runs/20260310-132030-2495bf2b/compute.* <TANK_DIR>/artifacts_py/runs/20260310-132030-2495bf2b/
+> scp -P 13771 -i ~/.ssh/YOUR_KEY root@YOUR_RUNPOD_IP:/tmp/magi_runs/20260310-132030-2495bf2b/responses.jsonl <TANK_DIR>/artifacts_py/runs/20260310-132030-2495bf2b/
 
-> tail -n 30 /home/limonene/ROCm-project/tank/artifacts_py/runs/20260310-132030-2495bf2b/compute.stderr.log
+> tail -n 30 <TANK_DIR>/artifacts_py/runs/20260310-132030-2495bf2b/compute.stderr.log
 ```
 出力（抜粋）：
 ```text

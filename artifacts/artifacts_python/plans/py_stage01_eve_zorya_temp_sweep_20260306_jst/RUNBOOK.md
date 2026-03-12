@@ -2,16 +2,16 @@
 
 ## Scope
 - Python lane only:
-  - `/home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01`
-  - `/home/limonene/ROCm-project/tank/artifacts_py`
-- Do not write to Rust artifacts (`/home/limonene/ROCm-project/tank/artifacts`).
+  - `<INSTALL_DIR>/batch_script/STAGE01`
+  - `<TANK_DIR>/artifacts_py`
+- Do not write to Rust artifacts (`<TANK_DIR>/artifacts`).
 
 ## Environment
 ```bash
-source /home/limonene/ROCm-project/.venv/bin/activate
-PLAN=/home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/plan.stage01.20260306_jst_prod30.json
+source <ROCM_PROJECT_DIR>/.venv/bin/activate
+PLAN=<INSTALL_DIR>/batch_script/STAGE01/plan.stage01.20260306_jst_prod30.json
 PLAN_ID=$(jq -r .plan_id "$PLAN")
-PLAN_DIR=/home/limonene/ROCm-project/tank/artifacts_py/plans/$PLAN_ID
+PLAN_DIR=<TANK_DIR>/artifacts_py/plans/$PLAN_ID
 ```
 
 ## Stage Commands
@@ -27,7 +27,7 @@ Requirements:
 
 Example (single pair):
 ```bash
-python3 /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/3-run_plan.py \
+python3 <INSTALL_DIR>/batch_script/STAGE01/3-run_plan.py \
   --plan "$PLAN" \
   --only-temp t0p1 --only-node zorya \
   --epochs 1 --limit-units 1 --limit-tasks 2 \
@@ -38,7 +38,7 @@ python3 /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/3-run_plan.py 
 
 ### S1 short run (passed pairs only)
 ```bash
-python3 /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/3-run_plan.py \
+python3 <INSTALL_DIR>/batch_script/STAGE01/3-run_plan.py \
   --plan "$PLAN" \
   --only-temp t0p1 --only-node zorya \
   --epochs 1 --limit-units 1 --limit-tasks 20 \
@@ -52,7 +52,7 @@ Success condition:
 
 ### S2 full tasks single epoch (passed pairs only)
 ```bash
-python3 /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/3-run_plan.py \
+python3 <INSTALL_DIR>/batch_script/STAGE01/3-run_plan.py \
   --plan "$PLAN" \
   --only-temp t0p1 --only-node zorya \
   --epochs 1 --limit-units 1 --limit-tasks 200 \
@@ -72,7 +72,7 @@ Rollout order must be:
 
 Per temp, execute both nodes (only passed pairs) with:
 ```bash
-python3 /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/3-run_plan.py \
+python3 <INSTALL_DIR>/batch_script/STAGE01/3-run_plan.py \
   --plan "$PLAN" \
   --only-temp t0p1 \
   --epochs 30 --limit-units 30 --limit-tasks 200 \
@@ -98,7 +98,7 @@ jq -c 'select(.phase=="end") | {run_id,node_id,temp_label,status,exit_code,ended
 ### responses line count for latest run
 ```bash
 RID=$(tail -n 1 "$PLAN_DIR/dispatch.exec.jsonl" | jq -r .run_id)
-RUN_DIR=/home/limonene/ROCm-project/tank/artifacts_py/runs/$RID
+RUN_DIR=<TANK_DIR>/artifacts_py/runs/$RID
 wc -l "$RUN_DIR/responses.jsonl"
 ```
 
@@ -121,13 +121,13 @@ jq -c 'select(.phase=="end") | {run_id,ended_at,status,exit_code}' "$PLAN_DIR/di
 
 ### stop local launcher
 ```bash
-pkill -TERM -f '/home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/3-run_plan.py'
+pkill -TERM -f '<INSTALL_DIR>/batch_script/STAGE01/3-run_plan.py'
 ```
 
 ### stop remote stuck execution
 ```bash
-ssh limonene@zorya "pkill -TERM -f 'ollama run|magi_runs|artifacts_py/runs'"
-ssh limonene@eve   "pkill -TERM -f 'ollama run|magi_runs|artifacts_py/runs'"
+ssh YOUR_USER@YOUR_HOST_ZORYA "pkill -TERM -f 'ollama run|magi_runs|artifacts_py/runs'"
+ssh YOUR_USER@YOUR_HOST_EVE   "pkill -TERM -f 'ollama run|magi_runs|artifacts_py/runs'"
 ```
 
 ### resume
@@ -139,8 +139,8 @@ Use read-only analyzer source from Rust repo, output to `artifacts_py`:
 ```bash
 OUT_DIR="$PLAN_DIR/analysis_out"
 mkdir -p "$OUT_DIR"
-python3 /home/limonene/ROCm-project/ROCm-MCP_rust/analysis/analyze_pairs.py \
-  --runs-root /home/limonene/ROCm-project/tank/artifacts_py/runs \
+python3 <RUST_REPO_DIR>/analysis/analyze_pairs.py \
+  --runs-root <TANK_DIR>/artifacts_py/runs \
   --out-dir "$OUT_DIR"
 ```
 Expected artifacts:

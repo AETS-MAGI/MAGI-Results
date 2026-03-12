@@ -1,6 +1,6 @@
 # Pair Analysis Report
 
-- runs_root: `/home/limonene/ROCm-project/tank/artifacts_py/runs`
+- runs_root: `<TANK_DIR>/artifacts_py/runs`
 - analyzed groups: `0`
 
 ## Per Node x Temperature x Language

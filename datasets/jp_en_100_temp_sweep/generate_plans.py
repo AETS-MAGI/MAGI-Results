@@ -16,11 +16,11 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument(
         "--tasks",
-        default="/home/limonene/ROCm-project/ROCm-MCP_rust/tasks/generated/jp_en_100_tasks.json",
+        default="<RUST_REPO_DIR>/tasks/generated/jp_en_100_tasks.json",
     )
     ap.add_argument(
         "--out-dir",
-        default="/home/limonene/ROCm-project/ROCm-MCP_rust/plans/jp_en_100_temp_sweep",
+        default="<RUST_REPO_DIR>/plans/jp_en_100_temp_sweep",
     )
     ap.add_argument(
         "--dataset-label",

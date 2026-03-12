@@ -12,7 +12,7 @@
 ## Generated Files
 
 - Tasks:
-  - `/home/limonene/ROCm-project/ROCm-MCP_rust/tasks/generated/jp_en_100_tasks.json`
+  - `<RUST_REPO_DIR>/tasks/generated/jp_en_100_tasks.json`
 - Plans:
   - `jp_en100_zorya_t0p0_e30.json`
   - `jp_en100_zorya_t0p1_e30.json`
@@ -35,10 +35,10 @@
 ### zorya
 
 ```bash
-ssh limonene@zorya '
+ssh YOUR_USER@YOUR_HOST_ZORYA '
 set -euo pipefail
-BIN=/home/limonene/magi_bin_20260305
-PLAN=/home/limonene/magi_plans_20260306/jp_en100_zorya_t0p1_e30.json
+BIN=<MAGI_BIN_DIR>
+PLAN=<MAGI_PLANS_DIR>/jp_en100_zorya_t0p1_e30.json
 export MAGI_RUNNER_BIN=$BIN/magi-runner
 unset MAGI_OLLAMA_STUB
 
@@ -46,9 +46,9 @@ $BIN/magi-master plan validate "$PLAN" --json
 $BIN/magi-master plan submit "$PLAN"
 $BIN/magi-master dispatch local --plan jp_en100_zorya_t0p1_e30_20260306 --limit 1
 
-PLAN_DIR=/home/limonene/ROCm-project/tank/artifacts/plans/jp_en100_zorya_t0p1_e30_20260306
+PLAN_DIR=<TANK_DIR>/artifacts/plans/jp_en100_zorya_t0p1_e30_20260306
 RID=$(tail -n 1 "$PLAN_DIR/dispatch.exec.jsonl" | jq -r .run_id)
-RUN_DIR=/home/limonene/ROCm-project/tank/artifacts/runs/$RID
+RUN_DIR=<TANK_DIR>/artifacts/runs/$RID
 
 $BIN/magi-master integrate --run "$RID"
 echo "RID=$RID"
@@ -60,10 +60,10 @@ head -n 2 "$RUN_DIR/responses.jsonl" | jq -r .raw_output | sed -n "1,2p"
 ### eve
 
 ```bash
-ssh limonene@eve '
+ssh YOUR_USER@YOUR_HOST_EVE '
 set -euo pipefail
-BIN=/home/limonene/magi_bin_20260305
-PLAN=/home/limonene/magi_plans_20260306/jp_en100_eve_t0p1_e30.json
+BIN=<MAGI_BIN_DIR>
+PLAN=<MAGI_PLANS_DIR>/jp_en100_eve_t0p1_e30.json
 export MAGI_RUNNER_BIN=$BIN/magi-runner
 unset MAGI_OLLAMA_STUB
 
@@ -71,9 +71,9 @@ $BIN/magi-master plan validate "$PLAN" --json
 $BIN/magi-master plan submit "$PLAN"
 $BIN/magi-master dispatch local --plan jp_en100_eve_t0p1_e30_20260306 --limit 1
 
-PLAN_DIR=/home/limonene/ROCm-project/tank/artifacts/plans/jp_en100_eve_t0p1_e30_20260306
+PLAN_DIR=<TANK_DIR>/artifacts/plans/jp_en100_eve_t0p1_e30_20260306
 RID=$(tail -n 1 "$PLAN_DIR/dispatch.exec.jsonl" | jq -r .run_id)
-RUN_DIR=/home/limonene/ROCm-project/tank/artifacts/runs/$RID
+RUN_DIR=<TANK_DIR>/artifacts/runs/$RID
 
 $BIN/magi-master integrate --run "$RID"
 echo "RID=$RID"
@@ -87,15 +87,15 @@ head -n 2 "$RUN_DIR/responses.jsonl" | jq -r .raw_output | sed -n "1,2p"
 ### zorya plans
 
 ```bash
-for P in /home/limonene/magi_plans_20260306/jp_en100_zorya_t0p{0,1,2,7}_e30.json; do
-  BIN=/home/limonene/magi_bin_20260305
+for P in <MAGI_PLANS_DIR>/jp_en100_zorya_t0p{0,1,2,7}_e30.json; do
+  BIN=<MAGI_BIN_DIR>
   PLAN_ID=$(jq -r .plan_id "$P")
   export MAGI_RUNNER_BIN=$BIN/magi-runner
   unset MAGI_OLLAMA_STUB
   $BIN/magi-master plan validate "$P" --json
   $BIN/magi-master plan submit "$P"
   $BIN/magi-master dispatch local --plan "$PLAN_ID" --limit 30
-  PLAN_DIR=/home/limonene/ROCm-project/tank/artifacts/plans/$PLAN_ID
+  PLAN_DIR=<TANK_DIR>/artifacts/plans/$PLAN_ID
   jq -r .run_id "$PLAN_DIR/dispatch.exec.jsonl" | while read -r RID; do
     $BIN/magi-master integrate --run "$RID"
   done
@@ -106,15 +106,15 @@ done
 ### eve plans
 
 ```bash
-for P in /home/limonene/magi_plans_20260306/jp_en100_eve_t0p{0,1,2,7}_e30.json; do
-  BIN=/home/limonene/magi_bin_20260305
+for P in <MAGI_PLANS_DIR>/jp_en100_eve_t0p{0,1,2,7}_e30.json; do
+  BIN=<MAGI_BIN_DIR>
   PLAN_ID=$(jq -r .plan_id "$P")
   export MAGI_RUNNER_BIN=$BIN/magi-runner
   unset MAGI_OLLAMA_STUB
   $BIN/magi-master plan validate "$P" --json
   $BIN/magi-master plan submit "$P"
   $BIN/magi-master dispatch local --plan "$PLAN_ID" --limit 30
-  PLAN_DIR=/home/limonene/ROCm-project/tank/artifacts/plans/$PLAN_ID
+  PLAN_DIR=<TANK_DIR>/artifacts/plans/$PLAN_ID
   jq -r .run_id "$PLAN_DIR/dispatch.exec.jsonl" | while read -r RID; do
     $BIN/magi-master integrate --run "$RID"
   done
@@ -125,11 +125,11 @@ done
 ## Analyzer
 
 ```bash
-python3 /home/limonene/ROCm-project/ROCm-MCP_rust/analysis/analyze_pairs.py \
-  --tank-root /home/limonene/ROCm-project/tank \
+python3 <RUST_REPO_DIR>/analysis/analyze_pairs.py \
+  --tank-root <TANK_DIR> \
   --artifact-root artifacts \
-  --gold /home/limonene/ROCm-project/ROCm-MCP_rust/analysis/gold_answers.json \
-  --out-dir /home/limonene/ROCm-project/tank/tmp_bak/magi_out_pairs_now
+  --gold <RUST_REPO_DIR>/analysis/gold_answers.json \
+  --out-dir <TANK_DIR>/tmp_bak/magi_out_pairs_now
 ```
 
 ## Hard Stop Conditions

@@ -1,7 +1,7 @@
 [
   {
     "node_id": "zorya",
-    "ssh": "limonene@zorya",
+    "ssh": "YOUR_USER@YOUR_HOST_ZORYA",
     "model_tag": "deepseek-r1-distill-qwen-7b-q4_k_m-t0p1:latest",
     "ok": true,
     "attempts": [
@@ -15,7 +15,7 @@
   },
   {
     "node_id": "eve",
-    "ssh": "limonene@eve",
+    "ssh": "YOUR_USER@YOUR_HOST_EVE",
     "model_tag": "deepseek-r1-distill-qwen-7b-q4_k_m-t0p1:latest",
     "ok": true,
     "attempts": [

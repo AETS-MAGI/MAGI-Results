@@ -6,7 +6,7 @@
     "temp_label": "t0p1",
     "epoch": 1,
     "replicate": 1,
-    "run_dir": "/home/limonene/ROCm-project/tank/artifacts_py/runs/20260306-015239-a59605a0",
+    "run_dir": "<TANK_DIR>/artifacts_py/runs/20260306-015239-a59605a0",
     "classification": "mkdir",
     "reason": "remote run_dir not writable and fallback mkdir failed:  mkdir: missing operand\nTry 'mkdir --help' for more information.",
     "ended_at": "2026-03-06T01:52:40Z"
@@ -18,7 +18,7 @@
     "temp_label": "t0p1",
     "epoch": 1,
     "replicate": 1,
-    "run_dir": "/home/limonene/ROCm-project/tank/artifacts_py/runs/20260306-015401-a59605a0",
+    "run_dir": "<TANK_DIR>/artifacts_py/runs/20260306-015401-a59605a0",
     "classification": "mkdir",
     "reason": "remote run_dir not writable and fallback mkdir failed: cmd='RD=/tmp/magi_runs/20260306-015401-a59605a0; mkdir -p \"$RD\"' chk_err= mk_err=mkdir: cannot create directory ‘’: No such file or directory",
     "ended_at": "2026-03-06T01:54:02Z"
@@ -30,7 +30,7 @@
     "temp_label": "t0p1",
     "epoch": 1,
     "replicate": 1,
-    "run_dir": "/home/limonene/ROCm-project/tank/artifacts_py/runs/20260306-015529-a59605a0",
+    "run_dir": "<TANK_DIR>/artifacts_py/runs/20260306-015529-a59605a0",
     "classification": "mkdir",
     "reason": "remote run_dir not writable and fallback mkdir failed: cmd='mkdir -p /tmp/magi_runs/20260306-015529-a59605a0' chk_err= mk_err=mkdir: missing operand\nTry 'mkdir --help' for more information.",
     "ended_at": "2026-03-06T01:55:30Z"
@@ -42,7 +42,7 @@
     "temp_label": "t0p1",
     "epoch": 1,
     "replicate": 1,
-    "run_dir": "/home/limonene/ROCm-project/tank/artifacts_py/runs/20260306-015556-a59605a0",
+    "run_dir": "<TANK_DIR>/artifacts_py/runs/20260306-015556-a59605a0",
     "classification": "mkdir",
     "reason": "remote run_dir not writable and fallback mkdir failed: cmd='mkdir -p /tmp/magi_runs/20260306-015556-a59605a0' chk_err= mk_err=mkdir: missing operand\nTry 'mkdir --help' for more information.",
     "ended_at": "2026-03-06T01:55:57Z"
@@ -54,7 +54,7 @@
     "temp_label": "t0p1",
     "epoch": 1,
     "replicate": 1,
-    "run_dir": "/home/limonene/ROCm-project/tank/artifacts_py/runs/20260306-015712-a59605a0",
+    "run_dir": "<TANK_DIR>/artifacts_py/runs/20260306-015712-a59605a0",
     "classification": "ollama_timeout",
     "reason": "preflight timeout (10s)",
     "ended_at": "2026-03-06T01:57:22Z"

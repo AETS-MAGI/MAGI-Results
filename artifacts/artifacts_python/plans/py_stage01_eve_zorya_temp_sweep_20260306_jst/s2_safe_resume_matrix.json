@@ -29,7 +29,7 @@
       "recovered_unclosed": true,
       "duration_sec": 370.714,
       "returncode": -15,
-      "cmd": "python3 /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/3-run_plan.py --plan /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/plan.stage01.20260306_jst_prod30.json --only-node zorya --only-temp t0p1 --epochs 1 --limit-units 1 --limit-tasks 200 --timeout-sec-per-task 180 --preflight-timeout-sec 60 --preflight-retries 2 --sleep-between-retries 5 --max-parallel-per-node 1",
+      "cmd": "python3 <INSTALL_DIR>/batch_script/STAGE01/3-run_plan.py --plan <INSTALL_DIR>/batch_script/STAGE01/plan.stage01.20260306_jst_prod30.json --only-node zorya --only-temp t0p1 --epochs 1 --limit-units 1 --limit-tasks 200 --timeout-sec-per-task 180 --preflight-timeout-sec 60 --preflight-retries 2 --sleep-between-retries 5 --max-parallel-per-node 1",
       "attempted_at": "2026-03-06T10:06:42Z"
     },
     {
@@ -46,7 +46,7 @@
       "recovered_unclosed": true,
       "duration_sec": 9.297,
       "returncode": -15,
-      "cmd": "python3 /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/3-run_plan.py --plan /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/plan.stage01.20260306_jst_prod30.json --only-node eve --only-temp t0p1 --epochs 1 --limit-units 1 --limit-tasks 200 --timeout-sec-per-task 180 --preflight-timeout-sec 60 --preflight-retries 2 --sleep-between-retries 5 --max-parallel-per-node 1",
+      "cmd": "python3 <INSTALL_DIR>/batch_script/STAGE01/3-run_plan.py --plan <INSTALL_DIR>/batch_script/STAGE01/plan.stage01.20260306_jst_prod30.json --only-node eve --only-temp t0p1 --epochs 1 --limit-units 1 --limit-tasks 200 --timeout-sec-per-task 180 --preflight-timeout-sec 60 --preflight-retries 2 --sleep-between-retries 5 --max-parallel-per-node 1",
       "attempted_at": "2026-03-06T10:06:51Z"
     },
     {
@@ -63,7 +63,7 @@
       "recovered_unclosed": true,
       "duration_sec": 56.595,
       "returncode": -15,
-      "cmd": "python3 /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/3-run_plan.py --plan /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/plan.stage01.20260306_jst_prod30.json --only-node zorya --only-temp t0p7 --epochs 1 --limit-units 1 --limit-tasks 200 --timeout-sec-per-task 180 --preflight-timeout-sec 60 --preflight-retries 2 --sleep-between-retries 5 --max-parallel-per-node 1",
+      "cmd": "python3 <INSTALL_DIR>/batch_script/STAGE01/3-run_plan.py --plan <INSTALL_DIR>/batch_script/STAGE01/plan.stage01.20260306_jst_prod30.json --only-node zorya --only-temp t0p7 --epochs 1 --limit-units 1 --limit-tasks 200 --timeout-sec-per-task 180 --preflight-timeout-sec 60 --preflight-retries 2 --sleep-between-retries 5 --max-parallel-per-node 1",
       "attempted_at": "2026-03-06T10:07:48Z"
     },
     {
@@ -80,7 +80,7 @@
       "recovered_unclosed": true,
       "duration_sec": 57.684,
       "returncode": -15,
-      "cmd": "python3 /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/3-run_plan.py --plan /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/plan.stage01.20260306_jst_prod30.json --only-node eve --only-temp t0p7 --epochs 1 --limit-units 1 --limit-tasks 200 --timeout-sec-per-task 180 --preflight-timeout-sec 60 --preflight-retries 2 --sleep-between-retries 5 --max-parallel-per-node 1",
+      "cmd": "python3 <INSTALL_DIR>/batch_script/STAGE01/3-run_plan.py --plan <INSTALL_DIR>/batch_script/STAGE01/plan.stage01.20260306_jst_prod30.json --only-node eve --only-temp t0p7 --epochs 1 --limit-units 1 --limit-tasks 200 --timeout-sec-per-task 180 --preflight-timeout-sec 60 --preflight-retries 2 --sleep-between-retries 5 --max-parallel-per-node 1",
       "attempted_at": "2026-03-06T10:08:45Z"
     },
     {
@@ -97,7 +97,7 @@
       "recovered_unclosed": true,
       "duration_sec": 13.664,
       "returncode": -15,
-      "cmd": "python3 /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/3-run_plan.py --plan /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/plan.stage01.20260306_jst_prod30.json --only-node zorya --only-temp t0p2 --epochs 1 --limit-units 1 --limit-tasks 200 --timeout-sec-per-task 180 --preflight-timeout-sec 60 --preflight-retries 2 --sleep-between-retries 5 --max-parallel-per-node 1",
+      "cmd": "python3 <INSTALL_DIR>/batch_script/STAGE01/3-run_plan.py --plan <INSTALL_DIR>/batch_script/STAGE01/plan.stage01.20260306_jst_prod30.json --only-node zorya --only-temp t0p2 --epochs 1 --limit-units 1 --limit-tasks 200 --timeout-sec-per-task 180 --preflight-timeout-sec 60 --preflight-retries 2 --sleep-between-retries 5 --max-parallel-per-node 1",
       "attempted_at": "2026-03-06T10:08:59Z"
     }
   ]
