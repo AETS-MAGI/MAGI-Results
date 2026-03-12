@@ -1,0 +1,61 @@
+{
+  "plan_id": "py_stage01_eve_zorya_temp_sweep_20260306",
+  "rerun_targets_total": 5,
+  "rerun_attempted": 2,
+  "rerun_ok": 1,
+  "rerun_failed": 1,
+  "recent_run_ids": [
+    "20260306-082656-a59605a0",
+    "20260306-082657-a59605a0"
+  ],
+  "recent_rows": [
+    {
+      "phase": "end",
+      "run_id": "20260306-082656-a59605a0",
+      "plan_id": "py_stage01_eve_zorya_temp_sweep_20260306",
+      "node_id": "zorya",
+      "host": "limonene@zorya",
+      "temp_label": "t0p1",
+      "temperature": 0.1,
+      "epoch": 1,
+      "replicate": 1,
+      "model_tag": "deepseek-r1-distill-qwen-7b-q4_k_m-t0p1:latest",
+      "run_dir": "/home/limonene/ROCm-project/tank/artifacts_py/runs/20260306-082656-a59605a0",
+      "started_at": "2026-03-06T08:26:56Z",
+      "status": "ok",
+      "ended_at": "2026-03-06T08:27:56Z",
+      "duration_sec": 58.994,
+      "exit_code": 0,
+      "remote_mode": "shared",
+      "stdout_head": "",
+      "stderr_head": ""
+    },
+    {
+      "phase": "end",
+      "run_id": "20260306-082657-a59605a0",
+      "plan_id": "py_stage01_eve_zorya_temp_sweep_20260306",
+      "node_id": "eve",
+      "host": "limonene@eve",
+      "temp_label": "t0p1",
+      "temperature": 0.1,
+      "epoch": 1,
+      "replicate": 1,
+      "model_tag": "deepseek-r1-distill-qwen-7b-q4_k_m-t0p1:latest",
+      "run_dir": "/home/limonene/ROCm-project/tank/artifacts_py/runs/20260306-082657-a59605a0",
+      "started_at": "2026-03-06T08:26:57Z",
+      "status": "failed",
+      "ended_at": "2026-03-06T08:29:45Z",
+      "duration_sec": 166.954,
+      "exit_code": 1,
+      "remote_mode": "shared",
+      "stdout_head": "",
+      "stderr_head": ""
+    }
+  ],
+  "failed_reasons_top3": [
+    {
+      "reason": "one or more tasks failed: item_id=P003:ja type=timeout elapsed_ms=120004 exit=n/a",
+      "count": 1
+    }
+  ]
+}

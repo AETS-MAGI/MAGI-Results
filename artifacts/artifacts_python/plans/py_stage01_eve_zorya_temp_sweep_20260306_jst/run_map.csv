@@ -1,0 +1,2 @@
+plan_id,run_id,node_id,temp_label,temperature,epoch,replicate,model_tag,exit_code,status
+py_stage01_eve_zorya_temp_sweep_20260306_jst,20260306-101430-a59605a0,zorya,t0p1,0.1,1,1,deepseek-r1-distill-qwen-7b-q4_k_m-t0p1:latest,1,failed

@@ -1,0 +1,50 @@
+{
+  "think_leak_vs_lang": {
+    "test": "fisher",
+    "p_value": 0,
+    "OR": 12.0046,
+    "CI_lo": 10.601,
+    "CI_hi": 13.6186
+  },
+  "json_valid_vs_lang": {
+    "test": "fisher",
+    "p_value": 0,
+    "OR": 0.0406,
+    "CI_lo": 0.0347,
+    "CI_hi": 0.0473
+  },
+  "accuracy_vs_lang": {
+    "test": "fisher",
+    "p_value": 0.1796,
+    "OR": 1.2327,
+    "CI_lo": 0.9015,
+    "CI_hi": 1.6703
+  },
+  "temp_vs_json_spearman": {
+    "en": {
+      "lang": "en",
+      "n": 3201,
+      "spearman_rho": 0.0094,
+      "p_value": 0.5951,
+      "json_valid_rate": 0.7126,
+      "json_valid_ci_lo": 0.6967,
+      "json_valid_ci_hi": 0.728
+    },
+    "ja": {
+      "lang": "ja",
+      "n": 2702,
+      "spearman_rho": 0.0412,
+      "p_value": 0.0322,
+      "json_valid_rate": 0.0914,
+      "json_valid_ci_lo": 0.0811,
+      "json_valid_ci_hi": 0.1029
+    }
+  },
+  "think_leak_vs_model_size": {
+    "test": "fisher",
+    "p_value": 1.924e-140,
+    "OR": "Inf",
+    "CI_lo": 124.9908,
+    "CI_hi": "Inf"
+  }
+}

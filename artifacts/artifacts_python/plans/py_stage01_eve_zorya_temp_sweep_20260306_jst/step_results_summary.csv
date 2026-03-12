@@ -1,0 +1,17 @@
+step,node_id,temp,ok,skipped,run_id,responses_lines,invalid_lines,reason
+S0,zorya,t0p1,True,False,20260306-083756-a59605a0,2,,ok
+S0,eve,t0p1,True,False,20260306-083810-a59605a0,2,,ok
+S0,zorya,t0p2,True,False,20260306-083828-f34b110a,2,,ok
+S0,eve,t0p2,False,False,20260306-083837-f34b110a,1,,one or more tasks failed: item_id=P001:ja type=timeout elapsed_ms=60003 exit=n/a
+S0,zorya,t0p0,True,False,20260306-083943-985fd3f1,2,,ok
+S0,eve,t0p0,True,False,20260306-083953-985fd3f1,2,,ok
+S0,zorya,t0p7,True,False,20260306-084005-eb8e55a6,2,,ok
+S0,eve,t0p7,True,False,20260306-084014-eb8e55a6,2,,ok
+S1,zorya,t0p1,True,False,20260306-084054-a59605a0,20,0,ok
+S1,eve,t0p1,True,False,20260306-084204-a59605a0,20,0,ok
+S1,zorya,t0p2,True,False,20260306-084354-f34b110a,20,0,ok
+S1,eve,t0p2,,True,,,,isolated_from_S0
+S1,zorya,t0p0,False,False,20260306-084518-985fd3f1,19,0,one or more tasks failed: item_id=P007:ja type=timeout elapsed_ms=120004 exit=n/a
+S1,eve,t0p0,False,False,20260306-084832-985fd3f1,19,0,one or more tasks failed: item_id=P007:ja type=timeout elapsed_ms=120003 exit=n/a
+S1,zorya,t0p7,True,False,20260306-085155-eb8e55a6,20,0,ok
+S1,eve,t0p7,True,False,20260306-085346-eb8e55a6,20,0,ok

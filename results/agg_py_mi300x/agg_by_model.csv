@@ -1,0 +1,8 @@
+source,model_id,n,think_leak_rate,raw_json_valid_n,raw_json_valid_rate,strip_json_valid_n,strip_json_valid_rate,valid_gain,raw_scorable_n,raw_acc,strip_scorable_n,strip_acc,acc_gain
+artifacts_py,deepseek-r1-distill-qwen-7b-q4_k_m-t0p0:latest,5109,0.4445,2173,0.4253,2173,0.4253,0.0,2173,0.2306,2173,0.2306,0.0
+artifacts_py,deepseek-r1-distill-qwen-7b-q4_k_m-t0p1:latest,260,0.4,110,0.4231,110,0.4231,0.0,110,0.2091,110,0.2091,0.0
+artifacts_py,deepseek-r1-distill-qwen-7b-q4_k_m-t0p2:latest,23,0.2174,15,0.6522,15,0.6522,0.0,15,0.2667,15,0.2667,0.0
+artifacts_py,deepseek-r1-distill-qwen-7b-q4_k_m-t0p7:latest,44,0.4318,19,0.4318,19,0.4318,0.0,19,0.4211,19,0.4211,0.0
+artifacts_python-MI300X,deepseek-r1-distill-qwen-7b-q4_k_m-t0p0:latest,467,0.3726,211,0.4518,211,0.4518,0.0,211,0.2844,211,0.2844,0.0
+artifacts_python-MI300X,deepseek-r1:32b,600,0.0,584,0.9733,584,0.9733,0.0,0,,0,,
+artifacts_python-MI300X,qwen3.5:9b,359,0.0,359,1.0,359,1.0,0.0,0,,0,,

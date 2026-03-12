@@ -1,0 +1,1 @@
+{"node_id": "zorya", "ssh": "limonene@zorya", "temp_label": "t0p1", "temperature": 0.1, "model_tag": "deepseek-r1-distill-qwen-7b-q4_k_m-t0p1:latest", "epoch": 1, "replicate": 1, "tasks_count": 200}

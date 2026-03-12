@@ -1,0 +1,117 @@
+{
+  "plan_id": "py_stage01_eve_zorya_temp_sweep_20260306_jst",
+  "step": "S0",
+  "required_responses_lines": 2,
+  "matrix": {
+    "zorya": {
+      "t0p1": true,
+      "t0p2": true,
+      "t0p0": true,
+      "t0p7": true
+    },
+    "eve": {
+      "t0p1": true,
+      "t0p2": false,
+      "t0p0": true,
+      "t0p7": true
+    }
+  },
+  "results": [
+    {
+      "step": "S0",
+      "node_id": "zorya",
+      "temp": "t0p1",
+      "attempted_at": "2026-03-06T08:38:10Z",
+      "cmd": "python3 /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/3-run_plan.py --plan /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/plan.stage01.20260306_jst_prod30.json --only-temp t0p1 --only-node zorya --epochs 1 --limit-units 1 --limit-tasks 2 --timeout-sec-per-task 60 --preflight-timeout-sec 60 --preflight-retries 2 --sleep-between-retries 5 --max-parallel-per-node 1",
+      "returncode": 0,
+      "run_id": "20260306-083756-a59605a0",
+      "ok": true,
+      "reason": "ok",
+      "responses_lines": 2
+    },
+    {
+      "step": "S0",
+      "node_id": "eve",
+      "temp": "t0p1",
+      "attempted_at": "2026-03-06T08:38:27Z",
+      "cmd": "python3 /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/3-run_plan.py --plan /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/plan.stage01.20260306_jst_prod30.json --only-temp t0p1 --only-node eve --epochs 1 --limit-units 1 --limit-tasks 2 --timeout-sec-per-task 60 --preflight-timeout-sec 60 --preflight-retries 2 --sleep-between-retries 5 --max-parallel-per-node 1",
+      "returncode": 0,
+      "run_id": "20260306-083810-a59605a0",
+      "ok": true,
+      "reason": "ok",
+      "responses_lines": 2
+    },
+    {
+      "step": "S0",
+      "node_id": "zorya",
+      "temp": "t0p2",
+      "attempted_at": "2026-03-06T08:38:37Z",
+      "cmd": "python3 /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/3-run_plan.py --plan /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/plan.stage01.20260306_jst_prod30.json --only-temp t0p2 --only-node zorya --epochs 1 --limit-units 1 --limit-tasks 2 --timeout-sec-per-task 60 --preflight-timeout-sec 60 --preflight-retries 2 --sleep-between-retries 5 --max-parallel-per-node 1",
+      "returncode": 0,
+      "run_id": "20260306-083828-f34b110a",
+      "ok": true,
+      "reason": "ok",
+      "responses_lines": 2
+    },
+    {
+      "step": "S0",
+      "node_id": "eve",
+      "temp": "t0p2",
+      "attempted_at": "2026-03-06T08:39:42Z",
+      "cmd": "python3 /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/3-run_plan.py --plan /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/plan.stage01.20260306_jst_prod30.json --only-temp t0p2 --only-node eve --epochs 1 --limit-units 1 --limit-tasks 2 --timeout-sec-per-task 60 --preflight-timeout-sec 60 --preflight-retries 2 --sleep-between-retries 5 --max-parallel-per-node 1",
+      "returncode": 0,
+      "run_id": "20260306-083837-f34b110a",
+      "ok": false,
+      "reason": "one or more tasks failed: item_id=P001:ja type=timeout elapsed_ms=60003 exit=n/a",
+      "responses_lines": 1
+    },
+    {
+      "step": "S0",
+      "node_id": "zorya",
+      "temp": "t0p0",
+      "attempted_at": "2026-03-06T08:39:53Z",
+      "cmd": "python3 /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/3-run_plan.py --plan /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/plan.stage01.20260306_jst_prod30.json --only-temp t0p0 --only-node zorya --epochs 1 --limit-units 1 --limit-tasks 2 --timeout-sec-per-task 60 --preflight-timeout-sec 60 --preflight-retries 2 --sleep-between-retries 5 --max-parallel-per-node 1",
+      "returncode": 0,
+      "run_id": "20260306-083943-985fd3f1",
+      "ok": true,
+      "reason": "ok",
+      "responses_lines": 2
+    },
+    {
+      "step": "S0",
+      "node_id": "eve",
+      "temp": "t0p0",
+      "attempted_at": "2026-03-06T08:40:05Z",
+      "cmd": "python3 /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/3-run_plan.py --plan /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/plan.stage01.20260306_jst_prod30.json --only-temp t0p0 --only-node eve --epochs 1 --limit-units 1 --limit-tasks 2 --timeout-sec-per-task 60 --preflight-timeout-sec 60 --preflight-retries 2 --sleep-between-retries 5 --max-parallel-per-node 1",
+      "returncode": 0,
+      "run_id": "20260306-083953-985fd3f1",
+      "ok": true,
+      "reason": "ok",
+      "responses_lines": 2
+    },
+    {
+      "step": "S0",
+      "node_id": "zorya",
+      "temp": "t0p7",
+      "attempted_at": "2026-03-06T08:40:14Z",
+      "cmd": "python3 /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/3-run_plan.py --plan /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/plan.stage01.20260306_jst_prod30.json --only-temp t0p7 --only-node zorya --epochs 1 --limit-units 1 --limit-tasks 2 --timeout-sec-per-task 60 --preflight-timeout-sec 60 --preflight-retries 2 --sleep-between-retries 5 --max-parallel-per-node 1",
+      "returncode": 0,
+      "run_id": "20260306-084005-eb8e55a6",
+      "ok": true,
+      "reason": "ok",
+      "responses_lines": 2
+    },
+    {
+      "step": "S0",
+      "node_id": "eve",
+      "temp": "t0p7",
+      "attempted_at": "2026-03-06T08:40:24Z",
+      "cmd": "python3 /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/3-run_plan.py --plan /home/limonene/ROCm-project/ROCm-MCP/batch_script/STAGE01/plan.stage01.20260306_jst_prod30.json --only-temp t0p7 --only-node eve --epochs 1 --limit-units 1 --limit-tasks 2 --timeout-sec-per-task 60 --preflight-timeout-sec 60 --preflight-retries 2 --sleep-between-retries 5 --max-parallel-per-node 1",
+      "returncode": 0,
+      "run_id": "20260306-084014-eb8e55a6",
+      "ok": true,
+      "reason": "ok",
+      "responses_lines": 2
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "node_id": "zorya",
+    "ssh": "limonene@zorya",
+    "model_tag": "deepseek-r1-distill-qwen-7b-q4_k_m-t0p1:latest",
+    "ok": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "exit_code": 0,
+        "elapsed_ms": 9845,
+        "stderr_head": "\u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[2K\u001b[1G\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?25l\u001b[?25h\u001b[?2"
+      }
+    ]
+  },
+  {
+    "node_id": "eve",
+    "ssh": "limonene@eve",
+    "model_tag": "deepseek-r1-distill-qwen-7b-q4_k_m-t0p1:latest",
+    "ok": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "exit_code": 0,
+        "elapsed_ms": 17508,
+        "stderr_head": "\u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠹ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠸ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠼ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠼ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠦ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G"
+      }
+    ]
+  }
+]

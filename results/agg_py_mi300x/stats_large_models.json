@@ -1,0 +1,40 @@
+{
+  "32b": {
+    "model_ids": [
+      "deepseek-r1:32b"
+    ],
+    "n": 600,
+    "think_leak_n": 600,
+    "think_leak_rate": 1.0,
+    "json_valid_n": 584,
+    "json_valid_rate": 0.9733,
+    "by_node": {
+      "runpod-mi300x": {
+        "n": 600,
+        "think_leak_n": 600,
+        "think_leak_rate": 1.0,
+        "json_valid_n": 584,
+        "json_valid_rate": 0.9733
+      }
+    }
+  },
+  "qwen3.5": {
+    "model_ids": [
+      "qwen3.5:9b"
+    ],
+    "n": 359,
+    "think_leak_n": 359,
+    "think_leak_rate": 1.0,
+    "json_valid_n": 358,
+    "json_valid_rate": 0.9972,
+    "by_node": {
+      "runpod-mi300x": {
+        "n": 359,
+        "think_leak_n": 359,
+        "think_leak_rate": 1.0,
+        "json_valid_n": 358,
+        "json_valid_rate": 0.9972
+      }
+    }
+  }
+}

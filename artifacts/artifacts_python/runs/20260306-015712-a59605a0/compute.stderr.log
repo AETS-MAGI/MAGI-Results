@@ -1,0 +1,1 @@
+[preflight] cmd='ollama run deepseek-r1-distill-qwen-7b-q4_k_m-t0p1:latest Say OK.' exit=timeout elapsed_ms=10002 stub_mode=off

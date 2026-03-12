@@ -1,0 +1,18 @@
+{
+  "run_id": "20260311-074251-af97b73f",
+  "spec": {
+    "dataset": "pairs_ja_en_100.json",
+    "model_id": "deepseek-r1-distill-qwen-7b-q4_k_m-t0p2:latest",
+    "gen_params": {
+      "top_k": 40,
+      "top_p": 0.95,
+      "max_new_tokens": 256,
+      "seed": 42,
+      "temperature": 0.2
+    },
+    "epoch": 15,
+    "replicate": 1,
+    "tasks_count": 200,
+    "node_id": "runpod-mi300x"
+  }
+}

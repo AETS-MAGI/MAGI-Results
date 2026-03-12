@@ -1,0 +1,18 @@
+{
+  "run_id": "20260311-023631-113e6faa",
+  "spec": {
+    "dataset": "japanese_10q_list.json",
+    "model_id": "qwen3.5:9b",
+    "gen_params": {
+      "top_k": 40,
+      "top_p": 0.95,
+      "max_new_tokens": 512,
+      "seed": 42,
+      "temperature": 0.0
+    },
+    "epoch": 22,
+    "replicate": 1,
+    "tasks_count": 10,
+    "node_id": "runpod-mi300x"
+  }
+}

@@ -1,0 +1,1000 @@
+{
+  "schema_version": "magi-compute-exit-v0",
+  "run_id": "20260310-152303-2495bf2b",
+  "created_at": "2026-03-10T15:25:23Z",
+  "failed_stage": "inference",
+  "status": "failed_with_evidence",
+  "reason": "one or more tasks failed",
+  "issues": [
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P002:ja type=nonzero_exit elapsed_ms=88202 exit=-15"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P002:en type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P003:ja type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P003:en type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P004:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P004:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P005:ja type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P005:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P006:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P006:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P007:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P007:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P008:ja type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P008:en type=nonzero_exit elapsed_ms=22 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P009:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P009:en type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P010:ja type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P010:en type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P011:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P011:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P012:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P012:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P013:ja type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P013:en type=nonzero_exit elapsed_ms=18 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P014:ja type=nonzero_exit elapsed_ms=22 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P014:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P015:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P015:en type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P016:ja type=nonzero_exit elapsed_ms=22 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P016:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P017:ja type=nonzero_exit elapsed_ms=18 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P017:en type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P018:ja type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P018:en type=nonzero_exit elapsed_ms=18 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P019:ja type=nonzero_exit elapsed_ms=18 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P019:en type=nonzero_exit elapsed_ms=18 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P020:ja type=nonzero_exit elapsed_ms=18 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P020:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P021:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P021:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P022:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P022:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P023:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P023:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P024:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P024:en type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P025:ja type=nonzero_exit elapsed_ms=18 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P025:en type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P026:ja type=nonzero_exit elapsed_ms=22 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P026:en type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P027:ja type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P027:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P028:ja type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P028:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P029:ja type=nonzero_exit elapsed_ms=22 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P029:en type=nonzero_exit elapsed_ms=22 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P030:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P030:en type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P031:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P031:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P032:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P032:en type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P033:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P033:en type=nonzero_exit elapsed_ms=23 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P034:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P034:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P035:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P035:en type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P036:ja type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P036:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P037:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P037:en type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P038:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P038:en type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P039:ja type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P039:en type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P040:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P040:en type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P041:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P041:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P042:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P042:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P043:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P043:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P044:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P044:en type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P045:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P045:en type=nonzero_exit elapsed_ms=22 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P046:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P046:en type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P047:ja type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P047:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P048:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P048:en type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P049:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P049:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P050:ja type=nonzero_exit elapsed_ms=23 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P050:en type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P051:ja type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P051:en type=nonzero_exit elapsed_ms=18 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P052:ja type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P052:en type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P053:ja type=nonzero_exit elapsed_ms=18 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P053:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P054:ja type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P054:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P055:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P055:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P056:ja type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P056:en type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P057:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P057:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P058:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P058:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P059:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P059:en type=nonzero_exit elapsed_ms=22 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P060:ja type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P060:en type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P061:ja type=nonzero_exit elapsed_ms=18 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P061:en type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P062:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P062:en type=nonzero_exit elapsed_ms=22 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P063:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P063:en type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P064:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P064:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P065:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P065:en type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P066:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P066:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P067:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P067:en type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P068:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P068:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P069:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P069:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P070:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P070:en type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P071:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P071:en type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P072:ja type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P072:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P073:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P073:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P074:ja type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P074:en type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P075:ja type=nonzero_exit elapsed_ms=22 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P075:en type=nonzero_exit elapsed_ms=18 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P076:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P076:en type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P077:ja type=nonzero_exit elapsed_ms=25 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P077:en type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P078:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P078:en type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P079:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P079:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P080:ja type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P080:en type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P081:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P081:en type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P082:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P082:en type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P083:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P083:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P084:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P084:en type=nonzero_exit elapsed_ms=22 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P085:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P085:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P086:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P086:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P087:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P087:en type=nonzero_exit elapsed_ms=18 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P088:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P088:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P089:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P089:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P090:ja type=nonzero_exit elapsed_ms=22 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P090:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P091:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P091:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P092:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P092:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P093:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P093:en type=nonzero_exit elapsed_ms=19 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P094:ja type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P094:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P095:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P095:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P096:ja type=nonzero_exit elapsed_ms=22 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P096:en type=nonzero_exit elapsed_ms=21 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P097:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P097:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P098:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P098:en type=nonzero_exit elapsed_ms=23 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P099:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P099:en type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P100:ja type=nonzero_exit elapsed_ms=20 exit=1"
+    },
+    {
+      "kind": "semantic",
+      "path": "/runner/inference",
+      "message": "item_id=P100:en type=nonzero_exit elapsed_ms=20 exit=1"
+    }
+  ]
+}
