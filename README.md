@@ -69,7 +69,7 @@
 
 ## 関連リポジトリ
 
-- [MAGI-oss_python](https://github.com/limonene/MAGI-oss_python): Control Plane および推論Runnerの実装。
+- [MAGI-oss_python](https://github.com/AETS-MAGI/MAGI-oss_python): Control Plane および推論Runnerの実装。
 
 ## License
 
